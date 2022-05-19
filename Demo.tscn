@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/FreeCamera/scripts/FreeCamera.gd" type="Script" id=1]
+
+[node name="Demo" type="Spatial"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.34879, 0, 0 )
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.45912, 0, 0 )
+
+[node name="CSGBox4" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72513, 0, 0 )
+
+[node name="FreeCamera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.09147 )
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Stars Demo by Divin Gavran
+
+Move: W,A,S & D
+Run: Hold Shift
+Rotation: Hold RMB & Mouse Motion"
+valign = 2
